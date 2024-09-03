@@ -17,7 +17,6 @@ const dimensions = Dimensions.get('window')
 const logoHeight = Math.round((dimensions.width * 2.5) / 14)
 const logowidth = Math.round(dimensions.width)
 
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 import { Button } from 'react-native-elements';
 
@@ -38,14 +37,14 @@ export const Login = () => {
     }
 
     return (
-        <TouchableWithoutFeedback onPress={()=>{
+        <TouchableWithoutFeedback onPress={() => {
             Keyboard.dismiss()
         }}>
             <SafeAreaView style={global.container}>
                 <StatusBar style="light" />
 
 
-                <KeyboardAvoidingView behavior={Platform.OS==='ios'? 'padding' : 'height'}>
+                <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
 
 
                     <View style={global.logo}>
@@ -91,9 +90,9 @@ export const Login = () => {
                         />
 
                         <View>
-                        <Text style={{fontSize: 17,textAlign: 'center',marginTop: 15,color: '#d3d3ff'}}>
-                            Esqueceu a senha ?
-                        </Text>
+                            <Text style={{ fontSize: 17, textAlign: 'center', marginTop: 15, color: '#d3d3ff' }}>
+                                Esqueceu a senha ?
+                            </Text>
                         </View>
                     </View>
 
@@ -119,7 +118,7 @@ const global = StyleSheet.create({
         marginTop: 25,
         marginHorizontal: 15,
     },
-    logo:{
+    logo: {
         alignItems: 'center'
     }
 })
