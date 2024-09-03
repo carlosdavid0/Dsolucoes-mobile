@@ -34,8 +34,8 @@ Este é um projeto simples de React Native utilizando Expo. O aplicativo contém
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/carlosdavid0/Dsolucoes-mobile.git
+   cd Dsolucoes-mobile
    ```
 
 2. **Instale as dependências:**
